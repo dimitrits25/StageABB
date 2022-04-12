@@ -1,0 +1,14 @@
+.header{
+text-align: left;
+}
+
+.body {
+display:flex;
+justify-content:center;
+}
+
+.flexWrapper{
+    display: flex;
+    justify-content: center;
+}
+

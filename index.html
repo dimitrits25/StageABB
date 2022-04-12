@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>titel van de site</title>
+</head>
+<body>
+    <div class="flexWrapper">
+        <div class="contentWrapper">
+            <h1 class="header">ABB Robot Woord INPUT</h1>
+            <label for="input">Max 6 length</label>
+              
+                <input id="input" type="text" maxlength="6" autocomplete="off">
+                <button id="button">send</button>
+                <br>
+                <br>
+                <label>Laatste woord: </label>
+                <input id="woorden">
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Alle woorden</legend>
+                    <div id="woorden2"></div>
+                </fieldset>
+                <button id="clearLijst">clear</button>
+                
+              
+        </div>
+    </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+        <script src="index.js"></script>
+        
+</body>
+</html>
