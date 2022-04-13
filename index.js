@@ -2,7 +2,7 @@ let input = document.getElementById("input");
 let woorden = document.getElementById("woorden");
 let woorden2 = document.getElementById("woorden2");
 
-    client = new Paho.MQTT.Client('mqtt.eclipseprojects.io', Number(80), "dimitri159357824655");
+    client = new Paho.MQTT.Client('mqtt.eclipseprojects.io', Number(443), "dimitri159357824655");
 
     
    
