@@ -10,7 +10,7 @@ let woorden2 = document.getElementById("woorden2");
     e.preventDefault;
             client.onConnectionLost = onConnectionLost;
             client.onMessageArrived = onMessageArrived;
-            client.connect({useSSL: false, onSuccess:onConnect});
+            client.connect({useSSL: true, onSuccess:onConnect});
 
         function onConnect() {
 
