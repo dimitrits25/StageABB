@@ -31,7 +31,7 @@ let woorden2 = document.getElementById("woorden2");
             
             let letters = /^[A-Za-z]+$/;
             
-            if (message.payloadString.match(letters))
+            if (message.payloadString.match(letters) && message.payloadString.length <= 6)
             {
 
                 client.send("IOT.Stage.Robot./159357824655", message.payloadString);
@@ -50,7 +50,7 @@ let woorden2 = document.getElementById("woorden2");
  
             else
             {
-                alert('gelieve enkel letters te gebruiken');
+                alert('Gelieve enkel letters te gebruiken. \nGelieve niet meer dan 6 letters te gebruiken.');
                 input.value = "";
                 client.disconnect();
             }
