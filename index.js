@@ -79,7 +79,7 @@ let woorden2 = document.getElementById("woorden2");
                 
                 console.log("message: " + message.payloadString);
                 alert('uw booschap "' + message.payloadString + '" is goed ontvangen')
-                woorden.value = laatsteWoord;
+                woorden.innerHTML = laatsteWoord;
                 localStorage.setItem("laatste woord" , laatsteWoord)
                 woorden2.innerHTML = "";
                 woorden2.innerHTML += localStorage.getItem("alleWoorden");
@@ -101,14 +101,14 @@ let woorden2 = document.getElementById("woorden2");
 
     let clearLijst = document.getElementById("clearLijst").addEventListener("click", (e) => {
         e.preventDefault;
-       woorden.value = "";
+       woorden.innerHTML = "";
        localStorage.setItem("laatste woord", "");
        localStorage.setItem("alleWoorden", "");
        woorden2.innerHTML = localStorage.getItem("alleWoorden");
     })
 
     woorden2.innerHTML += localStorage.getItem("alleWoorden");
-    woorden.value = localStorage.getItem("laatste woord");
+    woorden.innerHTML = localStorage.getItem("laatste woord");
 
 
 
