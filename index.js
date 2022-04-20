@@ -104,7 +104,9 @@ let woorden2 = document.getElementById("woorden2");
        woorden.innerHTML = "";
        localStorage.setItem("laatste woord", "");
        localStorage.setItem("alleWoorden", "");
-       woorden2.innerHTML = localStorage.getItem("alleWoorden");
+        if(localStorage.getItem("allewoorden") != null | undefined){
+            woorden2.innerHTML = localStorage.getItem("alleWoorden");
+       }
     })
 
     woorden2.innerHTML += localStorage.getItem("alleWoorden");
