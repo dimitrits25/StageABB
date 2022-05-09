@@ -41,7 +41,7 @@ let woorden2 = document.getElementById("woorden2");
                 localStorage.setItem("alleWoorden" , woorden2.innerHTML);
                 client.send("IOT.Stage.Robot./1593578246555", localStorage.getItem("alleWoorden"));
                 
-                if (message.destinationName = "IOT.Stage.Robot./15935782465555") {
+                if (message.destinationName == "IOT.Stage.Robot./15935782465555") {
                     message = new Paho.MQTT.Message(localStorage.getItem("testen"));
                     localStorage.setItem("testen", message.payloadString);
                     console.log("mqtt 3 = ", message.payloadString);
